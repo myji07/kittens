@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("../assets/images/sunny-day.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 650px;
+  margin: 0 auto;
+}
+
+.kitten_container {
+  background-image: url("../assets/images/kitten-medium.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+  .container {
+    display: block;
+    background-image: url("../assets/images/night.jpg");
+    background-size: cover;
+  }
+  .kitten_container {
+    display: none;
+  }
+  .kitten_container {
+    display: block;
+    background-image: url("../assets/images/kitten-small.png");
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    display: none;
+  }
+  .container {
+    display: block;
+    background-image: url("../assets/images/dawn.png");
+    background-size: cover;
+  }
+  .kitten_container {
+    display: none;
+  }
+  .kitten_container {
+    display: block;
+    background-image: url("../assets/images/kitten-large.png");
+  }
+}
